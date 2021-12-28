@@ -4,7 +4,7 @@ stages:
 
 ## 测试作业
 test:
-  image: themattrix/tox
+  image: mirantis/tox
   #  extends: .test
   tags:
     - kubernetes-runner
