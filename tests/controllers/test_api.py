@@ -22,3 +22,12 @@ def test_exception(test_client):
     assert resp.status_code == 404
     data = resp.get_json()
     assert data["code"] == CABINET_NOT_FOUND
+
+
+def test_create_work_statics(test_client):
+    data = {
+        "asset_id": "test_asset_id",
+        "online_time": 200,
+    }
+    resp = test_client.post("/api/v1/cabinet-work-statics", json=data)
+    assert resp.status_code == 200

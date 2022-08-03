@@ -13,3 +13,7 @@ pytest==6.2.5
 tox==3.24.4
 flake8==4.0.1
 coverage==6.2
+alibabacloud-ecs20140526==4.24.17
+alibabacloud-iot20180120==3.0.6
+alibabacloud-tea-console==0.0.1
+mq-http-sdk==1.0.3

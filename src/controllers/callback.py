@@ -10,6 +10,6 @@ bp = BlueprintRouter()
 
 @bp.route("/", methods=["POST"], strict_slashes=False)
 def callback():
-    obj = request.get_json()
+    obj = request.get_data()
     logger.info(f"[callback] request body: {obj}")
     return make_ok_resp()

@@ -21,7 +21,7 @@ def main():
     config.read(".bumpversion.cfg")
     version = config.get("bumpversion", "current_version")
     image_name_base = (
-        f"yqsl-registry.cn-beijing.cr.aliyuncs.com/skadi/flask-template-{ENVIRONMENT}"
+        f"registry.yuanqisenlin.com/skadi/flask-template-{ENVIRONMENT}"
     )
     image_version = f"{image_name_base}:{version}"
     image_latest = f"{image_name_base}:latest"
